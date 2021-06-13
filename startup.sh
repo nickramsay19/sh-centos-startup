@@ -1,3 +1,8 @@
+# enable http and https in the firewall
+sudo firewall-cmd --permanent --zone=public --add-service=http
+sudo firewall-cmd --permanent --zone=public --add-service=https
+sudo firewall-cmd --reload
+
 # disable firewall
 sudo systemctl stop firewalld
 sudo systemctl disable firewalld
